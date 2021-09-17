@@ -1,0 +1,41 @@
+.header-wrapper {
+    margin: 32px;
+  
+    .header {
+      border-radius: 1em;
+      background-color: white;
+      padding: 16px 24px;
+      height: 80px;
+  
+      .header-logo {
+        color: rgb(1, 87, 155);
+        margin-right: 15%;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+      }
+  
+      .vl {
+        border-left: 0.1em solid rgb(241, 242, 243);
+        height: 50%;
+        top: 0;
+      }
+      .vl-1{
+        border-left: 0.1em solid rgb(241, 242, 243);
+        height: 50%;
+        top: 0;
+        margin-left:2%;
+      }
+      .header-title{
+        display: flex;
+        justify-content: center;
+        margin-left: 2%;
+        align-items: center;
+        
+      }
+      .spacer {
+        flex: 1 1 auto;
+      }
+    }
+  }
+  

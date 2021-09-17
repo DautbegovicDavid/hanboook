@@ -1,0 +1,20 @@
+<mat-drawer-container class="sidebar">
+  <mat-drawer mode="side" opened>
+    <mat-list color="primary">
+      <div *ngFor="let step of links">
+        <mat-list-item *ngIf="step.visible">
+          <button mat-raised-button routerLink="{{ step.route }}" routerLinkActive="mat-accent"
+            [routerLinkActiveOptions]="{ exact: true }">
+            <mat-icon style="font-size:20px;">{{ step.icon }}</mat-icon>
+            <span class="btn-text">{{ step.name }}</span>
+          </button>
+        </mat-list-item>
+      </div>
+      <ng-content select="[sidebar]"></ng-content>
+      <div class="spacer"></div>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <ng-content select="[content]"></ng-content>
+  </mat-drawer-content>
+</mat-drawer-container>

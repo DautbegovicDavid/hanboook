@@ -1,0 +1,28 @@
+<app-dashboard-layout>
+    <div header>
+      <header>
+        <div left>
+          Handbook
+        </div>
+        <div right>
+          <button mat-button color="primary" class="add-new-button" routerLink="INSERT ROUTE">
+            <mat-icon>add</mat-icon>
+            <span>Add New Category</span>
+          </button>
+        </div>
+        <div rightSearch>
+            <button mat-button color="primary" class="search-button" (click)="search()">
+              <mat-icon>search</mat-icon>
+            </button>
+          </div>
+      </header>
+    </div>
+    <div content>
+      <app-sidebar [links]="sidebarMenu" appAuthUser>
+        <div content class="h-full" style="border: 1px solid red;height: 29em">
+          heheh
+        </div>
+      </app-sidebar>
+    </div>
+<app-dashboard-layout>
+

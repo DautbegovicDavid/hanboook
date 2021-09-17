@@ -1,0 +1,164 @@
+$content-height: calc(100vh - 150px);
+
+.sidebar {
+  height: $content-height;
+  background-color: rgb(241,241,241); //ova mi treba
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  color: rgb(1, 87, 155);
+  border-radius: 1em;
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+}
+.mat-icon {
+  font-size: large;
+  align-content: center;
+  justify-content: center;
+  vertical-align: middle;
+  display: inline;
+}
+mat-list-item {
+    // border:1px solid red;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.mat-list-base {
+  padding-top: 0 !important;
+}
+mat-list {
+    min-width: 160px;
+    width: 90%;
+    height: $content-height;
+    display: flex;
+    flex-direction: column;
+}
+mat-list-item {
+  height: 56px !important;
+}
+
+mat-drawer {
+  background-color: rgb(241,241,241);
+  width: 20%;
+  border: 0;
+  padding: 0%;
+}
+mat-drawer-container {
+  height: 100%;
+  overflow: auto;
+  margin: 2em 2em 0 2em;
+//   background-color: green;
+}
+:host::ng-deep .mat-list-item-content {
+  padding: 0% !important;
+}
+.btn-text {
+  padding-left: 0.6em;
+  font-size: 14px;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.mat-raised-button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: rgb(117, 162, 198);
+  display: flex;
+  padding-right: 1em;
+}
+.mat-accent {
+  color: rgb(48, 118, 173);
+  background-color: #ffffff;
+  background: var(--light-high-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 4px #0000001f;
+  border-radius: 12px;
+  opacity: 1;
+}
+.mat-icon {
+  margin-left: 0.4em;
+}
+.adding-page-btn {
+  color: #0c102099;
+}
+@media screen and (max-width: 1200px) {
+  .btn-text {
+    font-size: small;
+    padding-left: 0.1em; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .mat-icon {
+    font-size: 18px;
+  }
+  mat-list-item {
+    width: 180px;
+  }
+  mat-list {
+    width: 180px;
+  }
+  mat-drawer {
+    width: 20%;
+  }
+  .mat-icon {
+    margin-left: 0em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .btn-text {
+    font-size: small;
+    padding-left: 0.3em; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .mat-icon {
+    font-size: 14px;
+  }
+  mat-list {
+    width: 145px;
+  }
+  mat-drawer {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .btn-text {
+    font-size: small;
+    padding-left: 0.1em;
+  }
+  .mat-icon {
+    font-size: 14px;
+  }
+  mat-list {
+    width: 135px;
+  }
+  mat-drawer {
+    width: 20%;
+  }
+  .mat-raised-button {
+    padding-left: 0.7em;
+    padding-right: 0.4em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  mat-drawer {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 620px) {
+  mat-list {
+    width: 130px;
+  }
+}
+.mali-btn {
+  width: 5em;
+  height: 5em;
+  border: 0;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
