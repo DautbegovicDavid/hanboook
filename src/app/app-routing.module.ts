@@ -16,6 +16,18 @@ const routes: Routes = [
     path: 'analytics',
     component: AddHandbookComponent,
   },
+  {
+    path: 'chat',
+    component: AddHandbookComponent,
+  },
+  {
+    path: 'tickets',
+    component: AddHandbookComponent,
+  },
+  {
+    path: 'lost-found',
+    component: AddHandbookComponent,
+  },
 
 ];
 
